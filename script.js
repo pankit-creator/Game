@@ -1,3 +1,11 @@
+const shootSound = new Audio("sounds/shoot.mp3");
+const bgMusic = new Audio("sounds/background-music.mp3");
+
+bgMusic.loop = true;
+
+document.addEventListener("click", () => {
+    bgMusic.play();
+}, { once: true });
 const player = document.getElementById("player");
 const gameArea = document.getElementById("gameArea");
 
